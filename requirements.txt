@@ -8,7 +8,6 @@ numpy
 tweepy
 plotly-express
 folium
-geopy
 streamlit-folium
 geopandas
 requires.io
