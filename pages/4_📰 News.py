@@ -28,7 +28,6 @@ from streamlit.logger import get_logger
 from urllib.error import URLError
 from bs4 import BeautifulSoup
 import urllib.request,sys,time
-from textblob import TextBlob
 import nltk
 nltk.download('punkt')
 import csv
