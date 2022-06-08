@@ -13,3 +13,4 @@ requires.io
 plotly.express
 geopy
 nltk
+jsonpickle
