@@ -18,7 +18,6 @@ import branca.colormap as cm
 import tweepy
 import time
 from datetime import date, datetime
-from pandas_profiling import ProfileReport
 from ipywidgets import interactive, HBox, VBox
 import inspect
 import textwrap
