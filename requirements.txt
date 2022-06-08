@@ -11,5 +11,4 @@ folium
 streamlit-folium
 geopandas
 requires.io
-plotly
 plotly.express
