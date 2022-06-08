@@ -25,7 +25,6 @@ from collections import OrderedDict
 import io
 from IPython.display import display
 from streamlit.logger import get_logger
-import panel as pn
 from urllib.error import URLError
 from bs4 import BeautifulSoup
 import urllib.request,sys,time
