@@ -1,0 +1,14 @@
+pandas
+plotly
+streamlit
+matplotlib
+scipy==1.4.1
+scikit-learn
+numpy
+tweepy
+plotly-express
+folium
+geopy
+streamlit-folium
+geopandas
+requires.io
