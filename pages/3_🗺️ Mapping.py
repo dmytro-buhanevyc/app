@@ -96,7 +96,7 @@ def show_maps(data, threshold_scale):
         smooth_factor=0,
         overlay=True,
         nan_fill_color='black', nan_fill_opacity=None, 
-        bins = [0, 20000, 50000, 100000, 200000, 300000],
+        #bins = [0, 20000, 50000, 100000, 200000, 300000],
         reset=True).add_to(map_sby)
 
 
@@ -120,6 +120,7 @@ select_data = st.sidebar.radio(
 
 map_sby = folium.Map(tiles=select_maps,  location=[centers[0], centers[1]], zoom_start=5)
 
+
 data_all['Region'] = data_all['Region'].str.title()
 #data_all = data_all.replace({'Region':'Pabean Cantikan'},'Pabean Cantian')
 #data_all = data_all.replace({'Region':'Karangpilang'},'Karang Pilang')
@@ -133,3 +134,5 @@ for idx in range(27):
     data_geo['features'][idx]['properties']['LastUpdated'] = int(data_all['LastUpdated'][idx])
 
 show_maps(select_data, threshold(select_data))
+
+map_sby
