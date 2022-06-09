@@ -42,12 +42,12 @@ progress_bar.empty()
 
 st.write("# TCA Mapping Demo")
 
-st.write("Currently, one data layer is present in the project, which represents the preliminary number (as of 25.03.2022) of internally displaced persons in Ukraine")
-url="https://raw.githubusercontent.com/dmytro-buhanevyc/twitteranalysis/main/IDP/IDP_data.csv"
+st.write("Currently, one data layer is present, which represents the preliminary number of internally displaced persons in Ukraine. Data collected from various sources")
+url="https://raw.githubusercontent.com/dmytro-buhanevyc/app/main/mappingdata/IDP_data.csv"
 s=requests.get(url).content
 data_all=pd.read_csv(io.StringIO(s.decode('utf-8')))
 
-with urlopen(r'https://raw.githubusercontent.com/dmytro-buhanevyc/twitteranalysis/main/IDP/stanford-gg870xt4706-geojson.json') as f:
+with urlopen(r'https://raw.githubusercontent.com/dmytro-buhanevyc/app/main/mappingdata/map.json') as f:
     data_geo = json.load(f)
 
 #with urlopen('https://raw.githubusercontent.com/org-scn-design-studio-community/sdkcommunitymaps/master/geojson/Europe/Ukraine-regions.json') as response:
