@@ -56,7 +56,7 @@ st.set_page_config(
 
     )
 
-st.write("# TCA News Analysis")
+st.write("# TCA News")
 
 progress_bar = st.sidebar.progress(0)
 # We clear elements by calling empty on them.
