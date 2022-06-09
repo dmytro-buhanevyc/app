@@ -154,7 +154,7 @@ st.button("Reset")
 
 
 
-counted_global = global_news.groupby(['date', 'level_0', 'Username', 'Followers', 'content', 'Likes', 'Retweets']).size().to_frame('Count').reset_index()
+counted_global = global_news.groupby(['date', 'level_0', 'Username', 'Followers', 'content', 'Likes', 'Retweets', 'Replies']).size().to_frame('Count').reset_index()
 global_news = counted_global.set_index('level_0', drop=False)
 global_news.content = global_news.content.str.wrap(60)
 global_news.content = global_news.content.apply(lambda x: x.replace('\n', '<br>'))
@@ -176,8 +176,8 @@ try:
         global_news_short = global_news.drop(columns = [ 'Count', 'level_0'])
         st.write("####  ", global_news_short) #this creates the table
         fig=px.scatter(global_news, x="Likes", y="Retweets", 
-        size="Likes", color="Username", color_discrete_sequence=px.colors.qualitative.Bold, 
-        custom_data=["Username", 'Likes', 'date', 'content'],
+        size="Replies", color="Username", color_discrete_sequence=px.colors.qualitative.Bold, 
+        custom_data=["Username", 'Likes', 'date', 'content', 'Replies'],
             log_x=False, size_max=30)
         fig.update_traces(
         hovertemplate="<br>".join([
@@ -185,11 +185,12 @@ try:
         "Likes: %{customdata[1]}",
         "Date: %{customdata[2]}",
         "Content: %{customdata[3]}",
+        "Replies: %{customdata[4]}",
         
     ])
 )
         fig.update_layout(width = 900, height = 550,
-        title = "Ukraine in the news <br><sup>Based on latest tweets from each outlet</sup>",         xaxis_title="Likes",
+        title = "Ukraine in the news <br><sup>All tweets from each outlet, dot size equals the number of replies</sup>",         xaxis_title="Likes",
         yaxis_title="Retweets",
         legend_title="Media Source",)
         today = date.today()
