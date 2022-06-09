@@ -134,5 +134,3 @@ for idx in range(27):
     data_geo['features'][idx]['properties']['LastUpdated'] = int(data_all['LastUpdated'][idx])
 
 show_maps(select_data, threshold(select_data))
-
-map_sby
