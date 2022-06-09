@@ -33,7 +33,7 @@ import numpy as np
 import streamlit as st
 st.set_page_config(
         page_title="TCA Data Lab",
-        page_icon=":running:",
+        page_icon=":sunflower:",
 
     )
 
