@@ -42,7 +42,7 @@ progress_bar.empty()
 
 st.write("# TCA Mapping Demo")
 
-st.write("Currently, one data layer is present, which represents the preliminary number of internally displaced persons in Ukraine. Data collected from various sources")
+st.write("Currently, one data layer is present, which represents the preliminary number of internally displaced persons in Ukraine. Data collected from various sources. Apologies for the outdated spelling of toponyms, this will be corrected.")
 url="https://raw.githubusercontent.com/dmytro-buhanevyc/app/main/mappingdata/IDP_data.csv"
 s=requests.get(url).content
 data_all=pd.read_csv(io.StringIO(s.decode('utf-8')))
