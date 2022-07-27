@@ -3,7 +3,6 @@ import enum
 import re
 from collections import Counter
 import string
-import spacy.attrs
 from dframcy import DframCy
 from spacy.lang.fr.stop_words import STOP_WORDS as fr_stop
 import fr_core_news_sm
