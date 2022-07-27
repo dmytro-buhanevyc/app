@@ -17,7 +17,7 @@ st.write("# Keyword search")
 HtmlFile = open("german_keywords.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read() 
 print(source_code)
-components.html(source_code, height = 2000, width = 100)
+components.html(source_code, height = 900, width = 1000, scrolling=True)
 
 progress_bar = st.sidebar.progress(0)
 # We clear elements by calling empty on them.
