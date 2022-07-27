@@ -13,7 +13,7 @@ st.write("# Keyword search")
 
 
 
-HtmlFile = open("https://raw.githubusercontent.com/dmytro-buhanevyc/app/main/various/german_keywords.html", 'r', encoding='utf-8')
+HtmlFile = open("https://github.com/dmytro-buhanevyc/app/blob/main/various/german_keywords.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read() 
 print(source_code)
 components.html(source_code)
