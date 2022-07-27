@@ -15,10 +15,9 @@ st.write("# Keyword search")
 
 
 HtmlFile = open("german_keywords.html", 'r', encoding='utf-8')
-
-raw_html = HtmlFile.read().encode("utf-8")
-raw_html = base64.b64encode(raw_html).decode()
-components.iframe(f"data:text/html;base64,{raw_html}", height=800)
+source_code = HtmlFile.read() 
+print(source_code)
+components.iframe(f"{source_code}", height=800)
 
 progress_bar = st.sidebar.progress(0)
 # We clear elements by calling empty on them.
