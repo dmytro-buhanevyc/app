@@ -79,7 +79,7 @@ st.write("# Keyword search")
 
 
 
-HtmlFile = open("https://raw.githubusercontent.com/dmytro-buhanevyc/twitteranalysis/main/my_app/pages/german_keywords.html", 'r', encoding='utf-8')
+HtmlFile = open("https://raw.githubusercontent.com/dmytro-buhanevyc/app/main/various/german_keywords.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read() 
 print(source_code)
 components.html(source_code)
