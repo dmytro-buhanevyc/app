@@ -7,7 +7,6 @@ import altair as alt
 import numpy as np
 import plotly.express as px
 import plotly.graph_objs as go
-from ipywidgets import widgets
 import json # library to handle JSON files
 import requests 
 import folium # map rendering library
