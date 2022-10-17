@@ -16,12 +16,10 @@ import branca.colormap as cm
 import tweepy
 import time
 from datetime import date, datetime
-from ipywidgets import interactive, HBox, VBox
 import inspect
 import textwrap
 from collections import OrderedDict
 import io
-from IPython.display import display
 import matplotlib.pyplot as plt
 
 import streamlit as st
