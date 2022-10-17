@@ -21,7 +21,6 @@ import inspect
 import textwrap
 from collections import OrderedDict
 import io
-from IPython.display import display
 from streamlit.logger import get_logger
 from urllib.error import URLError
 from bs4 import BeautifulSoup
