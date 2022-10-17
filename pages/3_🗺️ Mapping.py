@@ -5,7 +5,6 @@ import altair as alt
 import numpy as np
 import plotly.express as px
 import plotly.graph_objs as go
-from ipywidgets import widgets
 import json # library to handle JSON files
 from geopy.geocoders import Nominatim 
 # convert an address into latitude and longitude values
@@ -18,12 +17,10 @@ import branca.colormap as cm
 import tweepy
 import time
 from datetime import date, datetime
-from ipywidgets import interactive, HBox, VBox
 import inspect
 import textwrap
 from collections import OrderedDict
 import io
-from IPython.display import display
 import matplotlib.pyplot as plt
 import requests
 from typing import Any
